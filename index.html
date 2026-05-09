@@ -3,93 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umbrella Hive | Digital Solutions</title>
+    <title>Umbrella Hive — AI Automation for Local Businesses</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            color: #ffffff;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(90deg, #e94560, #f5a623);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .tagline {
-            font-size: 1.2rem;
-            color: #a0a0b0;
-            margin-bottom: 2rem;
-        }
-        .product-card {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-top: 2rem;
-            text-align: left;
-        }
-        .product-card h2 {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-        .product-card p {
-            color: #b0b0c0;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        .price {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #e94560;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.8rem 2rem;
-            background: #e94560;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; }
+        .container { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #fff; }
+        .tagline { font-size: 1.2rem; color: #a0a0b0; margin-bottom: 2.5rem; }
+        .section { margin-bottom: 3rem; }
+        h2 { font-size: 1.6rem; margin-bottom: 1rem; color: #fff; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .service-card { background: #1a1a2e; border-radius: 12px; padding: 1.5rem; border: 1px solid #2a2a3e; }
+        .service-card h3 { color: #e94560; margin-bottom: 0.5rem; }
+        .service-card p { color: #b0b0c0; font-size: 0.95rem; line-height: 1.5; }
+        .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .price-card { background: #1a1a2e; border-radius: 12px; padding: 2rem; border: 1px solid #2a2a3e; text-align: center; }
+        .price-card h3 { margin-bottom: 0.5rem; }
+        .price { font-size: 2rem; font-weight: bold; color: #e94560; margin: 0.5rem 0; }
+        .price-note { font-size: 0.85rem; color: #888; }
+        .price-features { text-align: left; margin: 1rem 0; font-size: 0.9rem; color: #b0b0c0; }
+        .price-features li { margin-bottom: 0.4rem; list-style: none; }
+        .price-features li::before { content: "✓ "; color: #e94560; }
+        .btn { display: inline-block; margin-top: 1rem; padding: 0.8rem 2rem; background: #e94560; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: transform 0.2s; }
         .btn:hover { transform: scale(1.05); }
-        .footer { margin-top: 3rem; font-size: 0.8rem; color: #666; }
+        .cta-section { text-align: center; background: #1a1a2e; border-radius: 12px; padding: 3rem; margin-top: 2rem; border: 1px solid #2a2a3e; }
+        .cta-section p { color: #b0b0c0; margin-bottom: 1.5rem; font-size: 1.1rem; }
+        .footer { margin-top: 3rem; font-size: 0.8rem; color: #666; text-align: center; }
         .footer a { color: #a0a0b0; text-decoration: none; margin: 0 0.5rem; }
         .footer a:hover { color: #e94560; }
-        .disclaimer { margin-top: 1rem; font-size: 0.7rem; color: #555; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .disclaimer { margin-top: 1rem; font-size: 0.7rem; color: #555; max-width: 600px; margin-left: auto; margin-right: auto; text-align: center; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Umbrella Hive</h1>
-        <p class="tagline">Digital products that solve real problems.</p>
-        
-        <div class="product-card">
-            <h2>Prior Auth Mastery</h2>
-            <p>Get Insurance to Approve What Your Doctor Ordered. The complete playbook for navigating prior authorizations, beating denials, and getting the care you need approved.</p>
-            <span class="price">$39</span><br>
-            <a href="https://buy.stripe.com/fZufZievK11w8264aNe3e00" class="btn">Get the Guide</a>
+        <p class="tagline">AI automation that helps local businesses capture more revenue — without hiring more staff.</p>
+
+        <div class="section">
+            <h2>What We Automate</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Missed-Call Text Back</h3>
+                    <p>Every missed call gets an instant text reply. Capture leads that would otherwise go to your competitor.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Smart Scheduling</h3>
+                    <p>AI-powered booking that fills your calendar without phone tag. Clients book 24/7.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Review Follow-Up</h3>
+                    <p>Automatic review requests after every job. Build your Google rating on autopilot.</p>
+                </div>
+            </div>
         </div>
-        
+
+        <div class="section">
+            <h2>Pricing</h2>
+            <div class="pricing">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <span class="price">$497/mo</span>
+                    <p class="price-note">One core automation</p>
+                    <ul class="price-features">
+                        <li>Choose one automation</li>
+                        <li>Setup & configuration</li>
+                        <li>Ongoing maintenance</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/eVqfZi1IY5hM0zE7mZe3e01" class="btn">Get Started</a>
+                </div>
+                <div class="price-card">
+                    <h3>Pro</h3>
+                    <span class="price">$997/mo</span>
+                    <p class="price-note">Full automation suite</p>
+                    <ul class="price-features">
+                        <li>All three automations</li>
+                        <li>Custom integrations</li>
+                        <li>Priority support</li>
+                        <li>Monthly performance reports</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/14A6oI1IYh0u96agXze3e02" class="btn">Go Pro</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Not sure which plan fits?</h2>
+            <p>Email us and we'll audit your current setup for free — no commitment.</p>
+            <a href="mailto:contact@umbrellahive.org" class="btn">Get a Free Audit</a>
+        </div>
+
         <div class="footer">
             <a href="terms.html">Terms of Service</a> |
             <a href="privacy.html">Privacy Policy</a> |
             <a href="mailto:contact@umbrellahive.org">Contact</a>
         </div>
-        <p class="disclaimer">Results described are not guaranteed. Individual outcomes vary. Products are for educational purposes only and do not constitute professional advice. See Terms of Service for full details.</p>
+        <p class="disclaimer">Results vary by business. Umbrella Hive provides automation tools and services — revenue outcomes depend on your market, operations, and engagement. See Terms of Service for full details.</p>
     </div>
 </body>
 </html>
